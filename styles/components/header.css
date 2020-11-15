@@ -1,0 +1,83 @@
+header {
+    width: 100%;
+    box-shadow: 0 2px 7px -2px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .header-container {
+    width: 100%;
+    flex: 1;
+    display: inherit;
+    padding: 20px;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+header a {
+    color: #878787;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+header ol {
+    display: flex;
+    height: inherit;
+}
+
+header ol li {
+    height: inherit;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu {
+    height: inherit;
+    display: flex;
+}
+
+header .logo img {
+    width: 40px;
+    padding: 10px 0px 0px 30px;
+}
+
+.toogle-button {
+    display: none;
+    z-index: 4
+}
+
+@media  screen and (min-width: 320px) and (max-width: 1023px) {
+    .menu {
+    position: fixed;
+    background-color:white;
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+   /*  height: 100vh; */
+   bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    }
+
+    .menu.is-active {
+        left: 0;
+    }
+    .toogle-button {
+        display: block;
+        background: transparent;
+        border: none;
+    }
+}

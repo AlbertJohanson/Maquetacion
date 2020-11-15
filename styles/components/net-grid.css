@@ -1,0 +1,51 @@
+.net-grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.net-card{
+    width: 80%;
+    height: 650px;
+    padding: 20px;
+    display: grid;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: 0 2px 7px -2px gray;
+}
+
+.net-card .net-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.net-card .net-image img {
+    width: 100%;
+}
+
+.net-card .net-info-title{
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width : 425px) {
+    .net-grid {
+        grid-template-columns: 1fr ;
+    }
+    }
+
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+    .net-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    .net-grid {
+        width: 1360px;
+    }
+}
